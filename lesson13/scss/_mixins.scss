@@ -1,0 +1,28 @@
+@mixin mycontainer {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+@mixin myflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin backimg {
+    max-width: 1440px;
+    width: 100%;
+    height: 606px;
+    background-image: url("../images/viev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:  10px;
+}
+@mixin wrapper {
+    display: flax;
+    flex-wrap: wrap;
+
+}

@@ -1,0 +1,177 @@
+header {
+    height: 80px;
+    .container {
+        @media (max-width:1200px) {
+            width: 80%;
+        }
+        @include mycontainer;
+        margin-top: 20px;
+        @include myflex;
+        ul {
+        @include myflex;
+        width: 600px;
+        li {
+            color: #636060;
+           font-family: Helvetica;
+           font-size: 17px;
+            font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width: 780px) {
+            display: none;
+            }
+          }
+        }
+        .fa-bars {
+            @media (max-width:780px) {
+                display: inline-block;
+            }
+        }
+        }
+    }
+
+section {
+    
+    .head {
+    @include backimg;
+    h1 {
+        color: #FFF;
+        font-family: Helvetica;
+        font-size: 79px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    h5 {
+        color: #FFF;
+        font-family: Helvetica;
+        font-size: 19px;
+         font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 30px;
+    }
+    }
+}
+footer {
+    height: 80px;
+    .container {
+        @include mycontainer;
+        height: 600px;
+        margin-top: 30px;
+        display: flex;
+        
+        
+        .leftwrapper {
+            width: 150px;
+            @media (max-width:1000px) {
+                text-align: center;
+            }
+            @media (max-width:1100px) {
+                text-align: center;
+            }
+            
+            h2 {
+                color: #636060;
+             font-family: Helvetica;
+             font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+          line-height: normal;
+          @media (max-width:1000px) {
+            text-align: center;
+          }
+            }
+            h3 {
+                color: #010101;
+                font-family: Helvetica;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                 line-height: normal;
+                 padding-top: 15px;
+            }
+            p {
+                color: #636060;
+               font-family: Helvetica;
+                font-size: 20px;
+                font-style: normal;
+               font-weight: 400;
+               line-height: normal;
+               width: 235px;
+               height: 115px;
+               padding-top: 30px;
+            }
+        }
+        .rightwrapper {
+            @media (max-width: 1000px) {
+               flex-direction: column;
+               flex-wrap: nowrap; 
+            }
+            margin-left: 150px;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            h2 {
+                color: #343232;
+                font-family: Helvetica;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-top: 10px;
+            }
+            p {
+                color: #636060;
+                font-family: Helvetica;
+                font-size: 18px;
+                width: 286px;
+                height: 63px;
+                padding-top: 10px;
+            }
+            .card2 {
+                margin-left: 30px;
+                @media (max-width:1000px) {
+                    margin-top: 20px;
+                    margin-left: 4px;
+                }
+            }
+            .card3 {
+                margin-left: 30px;
+                @media (max-width:1000px) {
+                    margin-top: 20px;
+                    margin-left: 4px;
+                }
+                @media (max-width:1100px) {
+                    margin-top: 20px;
+                    margin-left: 1px;
+                }
+            }
+            .card4 {
+                margin-top: 30px;
+                @media (max-width:1100px) {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                }
+            }
+            .card5 {
+                margin-top: 30px;
+                margin-left: 30px;
+                @media (max-width:1000px) {
+                    margin-left: 4px;
+                }
+                @media (max-width:1100px) {
+                    margin-left: 4px;
+                }
+            }
+            .card6 {
+                margin-top: 30px;
+                margin-left: 30px;
+                @media (max-width:1000px) {
+                    margin-left: 4px;
+                }
+            }
+            
+    }
+    }
+}
